@@ -1,0 +1,88 @@
+.headerHome {
+    position: relative;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 0;
+    background-color: #0C909C;
+    opacity: 0.8;
+    height: 210px;
+}
+
+.headerbg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 1;
+}
+
+.headerText {
+    position: absolute;
+    bottom: 25px;
+    color: white;
+}
+
+.headerText h2 {
+    color: white;
+    font-weight: 500;
+}
+
+.headerText h3 {
+    color: white;
+    font-weight: 400;
+}
+
+.Asking {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.redAsking {
+    font-size: 18px;
+    color: #ff6b35;
+}
+
+.card {
+    height: 160px;
+    border-radius: 10px;
+}
+
+.happyCard {
+    background: #A8DCD1;
+}
+
+.neutralCard {
+    background-color: #FDE388;
+}
+
+.badCard {
+    background-color: #FFB79C;
+}
+
+.buttonback {
+    background: #ffffff;
+    color: #ff6b35;
+    border: 1px solid #ff6b35;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.buttonnext {
+
+    color: #ffffff;
+    background: #ff6b35;
+    border: 1px solid #ff6b35;
+    box-sizing: border-box;
+
+    border-radius: 4px;
+    /* font-size: 16px; */
+
+}
+
+.buttonnext:disabled {
+    background: #FFA281;
+    border: 1px solid #FFA281;
+}
+
+.opacity {
+    opacity: 0.4;
+}
