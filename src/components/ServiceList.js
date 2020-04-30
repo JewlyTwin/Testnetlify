@@ -140,11 +140,11 @@ class App extends Component {
           <div>(สามารถเลือกได้มากกว่า 1 บริการ)</div>
         </div>
 
-        <div className="required col-12 row pt-4">
-          <div className="col-10 pl-4">
+        <div className="required col-12 row pt-4 px-0 m-0">
+          <div className="col-10">
             <label for="checkbox">
-              <img src={doctor} className="rounded-circle" alt=""/>
-              <span className="department pt-2 pl-3 ">ตรวจรักษาโดยแพทย์</span>
+              <img src={doctor} alt=""/>
+              <span className="pl-3">ตรวจรักษาโดยแพทย์</span>
             </label>
           </div>
           <div className="col-2 check_box text-center ">
@@ -155,11 +155,11 @@ class App extends Component {
           </div>
         </div>
 
-        <div className="required col-12 row pt-3">
-          <div className="col-10 pl-4">
+        <div className="required col-12 row pt-3 px-0 m-0">
+          <div className="col-10">
             <label for="checkbox2">
-              <img src={nurse} className="rounded-circle" alt=""/>
-              <span className="department pt-2 pl-3 ">ตรวจรักษาโดยพยาบาลวิชาชีพ</span>
+              <img src={nurse} alt=""/>
+              <span className="pl-3">ตรวจรักษาโดยพยาบาลวิชาชีพ</span>
             </label>
           </div>
           <div className="col-2 check_box text-center" >
@@ -170,11 +170,11 @@ class App extends Component {
           </div>
         </div>
 
-        <div className="required col-12 row pt-3">
-          <div className="col-10 pl-4">
+        <div className="required col-12 row pt-3 px-0 m-0">
+          <div className="col-10">
             <label for="checkbox3">
-              <img src={wound} className="rounded-circle" alt=""/>
-              <span className="department pt-2 pl-3 ">บริการทำแผล</span>
+              <img src={wound} alt=""/>
+              <span className="pl-3">บริการทำแผล</span>
             </label>
           </div>
           <div className="col-2 check_box text-center">
@@ -185,11 +185,11 @@ class App extends Component {
           </div>
         </div>
 
-        <div className="required col-12 row pt-3">
-          <div className="col-10 pl-4">
+        <div className="required col-12 row pt-3 px-0 m-0">
+          <div className="col-10">
             <label for="checkbox4">
-              <img src={mental} className="rounded-circle" alt=""/>
-              <span className="department pt-2 pl-3 ">รับคำปรึกษาโดยนักจิตวิทยา</span>
+              <img src={mental} alt=""/>
+              <span className="pl-3">รับคำปรึกษาโดยนักจิตวิทยา</span>
             </label>
           </div>
           <div className="col-2 check_box text-center">
@@ -200,11 +200,11 @@ class App extends Component {
           </div>
         </div>
 
-        <div className="required col-12 row pt-3">
-          <div className="col-10 pl-4">
+        <div className="required col-12 row pt-3 px-0 m-0">
+          <div className="col-10">
             <label for="checkbox5">
-              <img src={rest} className="rounded-circle" alt=""/>
-              <span className="department pt-2 pl-3 ">นอนพักสังเกตอาการ</span>
+              <img src={rest} alt=""/>
+              <span className="pl-3">นอนพักสังเกตอาการ</span>
             </label>
           </div>
           <div className="col-2 check_box text-center">
@@ -215,11 +215,11 @@ class App extends Component {
           </div>
         </div>
 
-        <div className="required col-12 row pt-3">
-          <div className="col-10 pl-4">
+        <div className="required col-12 row pt-3 px-0 m-0">
+          <div className="col-10">
             <label for="checkbox6">
-              <img src={therapy} className="rounded-circle" alt=""/>
-              <span className="department pt-2 pl-3 ">กายภาพบำบัด</span>
+              <img src={therapy} alt=""/>
+              <span className="pl-3">กายภาพบำบัด</span>
             </label>
           </div>
           <div className="col-2 check_box text-center">

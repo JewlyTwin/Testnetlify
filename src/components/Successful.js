@@ -14,12 +14,12 @@ class successful extends Component {
                         </div>
                     </div>
 
-                    <div className="thankyou text-center pt-5">
+                    <div className="thankyou font-weight-bold text-center pt-5">
                         ขอบคุณสำหรับความคิดเห็น
                      </div>
                     <div className="thxcomment text-center pt-3">
                         ความคิดเห็นของคุณมีค่าเราจะนำทุกความคิดเห็น
-                    <p> ของคุณ ไปปรับปรุงการให้บริการของเรา </p>
+                    ของคุณ ไปปรับปรุงการให้บริการของเรา
                     </div>
 
                 </div>

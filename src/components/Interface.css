@@ -43,13 +43,6 @@
   border-radius: 70px;
 }
 
-
-.form-group {
-  font-size: 14px;
-  color: #2e2d2d;
-
-}
-
 .message {
   background: #ffffff;
   border: 1px solid #cccccc;
@@ -75,25 +68,11 @@
 }
 
 .thankyou {
-  font-size: x-large;
+  font-size: 1.3rem;
 }
 
 .thxcomment {
   font-size: 15px;
-}
-
-.department {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.departmentNurse {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.rounded-circle {
-  width: 45px;
 }
 
 .chooseTopic{
