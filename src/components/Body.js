@@ -4,6 +4,8 @@ import axios from 'axios'
 import Cookies from 'universal-cookie';
 import DotLoader from "react-spinners/DotLoader"
 import { css } from "@emotion/core";
+import swal from 'sweetalert';
+import moment from 'moment';
 
 const override = css`
 display: block;
@@ -54,7 +56,7 @@ class Body extends Component {
       email: '',
       comment: '',
       loading: false,
-      sec:0
+      sec: 0
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -78,7 +80,7 @@ class Body extends Component {
     const timecook = new Cookies().get('time');
     const time = new Date(timecook)
     const timenow = new Date()
-    const sec = Math.floor((timenow - time)/1000)
+    const sec = Math.floor((timenow - time) / 1000)
     this.setState({
       sec: sec
     })
@@ -117,14 +119,14 @@ class Body extends Component {
     const uniq = new Set(this.state.temp)
     this.state.factor.push(...uniq)
   }
-  
+
   handleSubmit = async (e) => {
     e.preventDefault()
     await this.countTime()
     this.setState({
       loading: true
     })
-    
+
     if (this.state.first.rating_factor !== 0) {
       this.state.factor_List.push(this.state.first)
     }
@@ -154,11 +156,12 @@ class Body extends Component {
       {
         method: 'post',
         url: 'http://127.0.0.1:8000/api/rate',
+        timeout: 10000,
         data: {
           rating: this.props.rating,
           comment: this.state.comment,
           email: this.state.email,
-          rated_at: "2020-04-13",
+          rated_at: moment(new Date()).format('YYYY-MM-DD'),
           survey_Id: 1,
           timer: this.state.sec,
           factor_List: this.state.factor_List
@@ -173,7 +176,15 @@ class Body extends Component {
       })
       .catch((error) => {
         console.log(error)
-        alert('error' + error)
+        swal({
+          title: "ไม่สามารถส่งแบบประเมินได้",
+          text: "โปรลองอีกครั้งในภายหลัง\n"+error,
+          icon: "error",
+          button: "ปิด",
+        });
+        this.setState({
+          loading: false
+        })
       })
   }
 
@@ -294,10 +305,6 @@ class Body extends Component {
                 </button>
               </div>
             }
-
-            {/* <button className="buttonnext pl-4 pr-4 pt-2 pb-2 ml-3">
-              ส่งแบบประเมิน
-            </button> */}
           </div>
         </form>
       </div>

@@ -13,7 +13,7 @@ class Header extends Component {
                     <div className="all text-center pt-5">
                         <div className="topic">
                             <div className="image">
-                                <img class="surveyimg mr-3" src={this.props.Images} alt="happy" />
+                                <img className="surveyimg mr-3" src={this.props.Images} alt="happy" />
 
                                 <span>{this.props.Happy}</span>
                                 <span>{this.props.Neutral}</span>
