@@ -4,7 +4,7 @@
     z-index: 0;
     background-color: #0C909C;
     opacity: 0.8;
-    height: 210px;
+    height: 170px;
 }
 
 .headerbg {
@@ -85,4 +85,8 @@
 
 .opacity {
     opacity: 0.4;
+}
+
+.radius{
+    border-radius: 10px;
 }

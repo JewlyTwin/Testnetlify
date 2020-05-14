@@ -101,7 +101,6 @@ class Body extends Component {
     if (this.state.service.includes("Wound")) {
       this.state.temp.push("จุดลงทะเบียน")
       this.state.temp.push("จุดทำแผล")
-      this.state.temp.push("จุดจ่ายยา")
     }
     if (this.state.service.includes("Mental")) {
       this.state.temp.push("จุดลงทะเบียน")
@@ -278,7 +277,7 @@ class Body extends Component {
               แสดงความคิดเห็นเพิ่มเติม<span className="text-danger">*</span>
               <input type="text" className="form-control" value={this.state.comment} onChange={this.handleChange} required />
 
-              <div className="mt-3">กรอกอีเมลล์เพื่อให้ติดต่อกลับ<br />หรือเพื่อรายงานผลการปรับปรุงข้อเสนอแนะ</div>
+              <div className="mt-3">กรอกอีเมลล์ <br/><span style={{color: "grey"}}>(เพื่อให้ติดต่อกลับหรือเพื่อแจ้งผลการปรับปรุงตามข้อเสนอแนะ)</span></div>
               <input type="email" className="form-control" value={this.state.email} onChange={this.handleChangeemail} />
             </div>
             :

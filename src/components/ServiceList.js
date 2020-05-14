@@ -140,92 +140,75 @@ class App extends Component {
           <div>(สามารถเลือกได้มากกว่า 1 บริการ)</div>
         </div>
 
-        <div className="required col-12 row pt-4 px-0 m-0">
-          <div className="col-10">
-            <label for="checkbox">
+        <div className="container mt-3 mb-2">
+          <div className="col-12 row radius m-0 py-2" onClick={this.handleChangeDoctor} 
+            style={this.state.Doctor ? {backgroundColor: "#3AA4AD", color: "white"} : {backgroundColor: "#DFDFDF"}}>
+            <div className="col-3 text-center">
               <img src={doctor} alt=""/>
-              <span className="pl-3">ตรวจรักษาโดยแพทย์</span>
-            </label>
-          </div>
-          <div className="col-2 check_box text-center ">
-            <input type="checkbox" id="checkbox" className="check_box" value={"Doctor"} onChange={this.handleChangeDoctor}
-            defaultChecked={this.state.Doctor}
-            />
-            <label for="checkbox"></label>
+            </div>
+            <div className="col-9 justify-content-center align-self-center">
+              <span>ตรวจรักษาโดยแพทย์</span>
+            </div>
           </div>
         </div>
 
-        <div className="required col-12 row pt-3 px-0 m-0">
-          <div className="col-10">
-            <label for="checkbox2">
-              <img src={nurse} alt=""/>
-              <span className="pl-3">ตรวจรักษาโดยพยาบาลวิชาชีพ</span>
-            </label>
-          </div>
-          <div className="col-2 check_box text-center" >
-            <input type="checkbox" id="checkbox2" className="check_box" value={"Nurse"} onChange={this.handleChangeNurse}
-            defaultChecked={this.state.Nurse}
-            />
-            <label for="checkbox2"></label>
+        <div className="container mt-3 mb-2">
+          <div className="col-12 row radius m-0 py-2" onClick={this.handleChangeNurse} 
+            style={this.state.Nurse ? {backgroundColor: "#3AA4AD", color: "white"} : {backgroundColor: "#DFDFDF"}}>
+            <div className="col-3 text-center">
+            <img src={nurse} alt=""/>
+            </div>
+            <div className="col-9 justify-content-center align-self-center">
+              <span>ตรวจรักษาโดยพยาบาลวิชาชีพ</span>
+            </div>
           </div>
         </div>
 
-        <div className="required col-12 row pt-3 px-0 m-0">
-          <div className="col-10">
-            <label for="checkbox3">
+        <div className="container mt-3 mb-2">
+          <div className="col-12 row radius m-0 py-2" onClick={this.handleChangeWound} 
+            style={this.state.Wound ? {backgroundColor: "#3AA4AD", color: "white"} : {backgroundColor: "#DFDFDF"}}>
+            <div className="col-3 text-center">
               <img src={wound} alt=""/>
-              <span className="pl-3">บริการทำแผล</span>
-            </label>
-          </div>
-          <div className="col-2 check_box text-center">
-            <input type="checkbox" id="checkbox3" className="check_box" value={"Wound"} onChange={this.handleChangeWound}
-            defaultChecked={this.state.Wound}
-            />
-            <label for="checkbox3"></label>
+            </div>
+            <div className="col-9 justify-content-center align-self-center">
+              <span>บริการทำแผล</span>
+            </div>
           </div>
         </div>
 
-        <div className="required col-12 row pt-3 px-0 m-0">
-          <div className="col-10">
-            <label for="checkbox4">
+        <div className="container mt-3 mb-2">
+          <div className="col-12 row radius m-0 py-2" onClick={this.handleChangeMental} 
+            style={this.state.Mental ? {backgroundColor: "#3AA4AD", color: "white"} : {backgroundColor: "#DFDFDF"}}>
+            <div className="col-3 text-center">
               <img src={mental} alt=""/>
-              <span className="pl-3">รับคำปรึกษาโดยนักจิตวิทยา</span>
-            </label>
-          </div>
-          <div className="col-2 check_box text-center">
-            <input type="checkbox" id="checkbox4" className="check_box" value={"Mental"} onChange={this.handleChangeMental}
-            defaultChecked={this.state.Mental}
-            />
-            <label for="checkbox4"></label>
+            </div>
+            <div className="col-9 justify-content-center align-self-center">
+              <span>รับคำปรึกษาโดยนักจิตวิทยา</span>
+            </div>
           </div>
         </div>
 
-        <div className="required col-12 row pt-3 px-0 m-0">
-          <div className="col-10">
-            <label for="checkbox5">
-              <img src={rest} alt=""/>
-              <span className="pl-3">นอนพักสังเกตอาการ</span>
-            </label>
-          </div>
-          <div className="col-2 check_box text-center">
-            <input type="checkbox" id="checkbox5" className="check_box" value={"Rest"} onChange={this.handleChangeRest}
-            defaultChecked={this.state.Rest}
-            />
-            <label for="checkbox5"></label>
+        <div className="container mt-3 mb-2">
+          <div className="col-12 row radius m-0 py-2" onClick={this.handleChangeRest} 
+            style={this.state.Rest ? {backgroundColor: "#3AA4AD", color: "white"} : {backgroundColor: "#DFDFDF"}}>
+            <div className="col-3 text-center">
+            <img src={rest} alt=""/>
+            </div>
+            <div className="col-9 justify-content-center align-self-center">
+              <span>นอนพักสังเกตอาการ</span>
+            </div>
           </div>
         </div>
 
-        <div className="required col-12 row pt-3 px-0 m-0">
-          <div className="col-10">
-            <label for="checkbox6">
+        <div className="container mt-3 mb-2">
+          <div className="col-12 row radius m-0 py-2" onClick={this.handleChangeTherapy} 
+            style={this.state.Therapy ? {backgroundColor: "#3AA4AD", color: "white"} : {backgroundColor: "#DFDFDF"}}>
+            <div className="col-3 text-center">
               <img src={therapy} alt=""/>
-              <span className="pl-3">กายภาพบำบัด</span>
-            </label>
-          </div>
-          <div className="col-2 check_box text-center">
-            <input type="checkbox" id="checkbox6" className="check_box" value={"Therapy"} onChange={this.handleChangeTherapy} 
-            defaultChecked={this.state.Therapy}/>
-            <label for="checkbox6"></label>
+            </div>
+            <div className="col-9 justify-content-center align-self-center">
+              <span>กายภาพบำบัด</span>
+            </div>
           </div>
         </div>
 
